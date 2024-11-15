@@ -60,6 +60,9 @@ main {
   color: #ad28eb;
 }
 
+.answer {
+  animation: show 0.5s ease-in;
+}
 .answer p {
   font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.651);
@@ -67,4 +70,31 @@ main {
 
 .hidden {
   display: none;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 599px) {
+  main {
+    background-image: url(../assets/images/background-pattern-mobile.svg);
+    height: 40vh;
+  }
+  .content-container {
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .question-container {
+    margin: 15px 0;
+  }
+  .q {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
