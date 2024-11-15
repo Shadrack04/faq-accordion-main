@@ -50,14 +50,14 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-}
-.q:hover {
-  color: #ad28eb;
+  cursor: pointer;
 }
 .q p {
-  color: black;
   font-weight: bold;
   font-size: 0.8rem;
+}
+.q:hover, .q:focus {
+  color: #ad28eb;
 }
 
 .answer p {

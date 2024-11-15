@@ -55,13 +55,14 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  &:hover {
-    color: #ad28eb;
-  }
+  cursor: pointer;
   p {
-    color: black;
     font-weight: bold;
     font-size: 0.8rem;
+  }
+  &:hover,
+  &:focus {
+    color: #ad28eb;
   }
 }
 
